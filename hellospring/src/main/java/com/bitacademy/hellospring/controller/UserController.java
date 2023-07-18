@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/user")
 public class UserController {
 	
-
+	//@RueqestMapping("/join");
 	@RequestMapping(value="/join",method=RequestMethod.GET)	//get방식으로 들어올때만 실행
 	public String join() {
 		
@@ -29,7 +29,7 @@ public class UserController {
 		//그래서 Vo의 변수 이름과 JSP의 name을 같게 해주는 것이 중요함.
 		System.out.println(userVo);
 		
-		return "redirect:/";
+		return "redirect:/user/join";
 	}
 	
 //	@ResponseBody
