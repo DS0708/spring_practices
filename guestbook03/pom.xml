@@ -7,4 +7,40 @@
   </parent>
   <artifactId>guestbook03</artifactId>
   <packaging>war</packaging>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<org.springframework-version>5.3.26</org.springframework-version>
+	</properties>
+
+	<dependencies>
+		
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- MariaDB JDBC -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>3.0.8</version>
+		</dependency>
+
+		<!-- JSTL -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>guestbook03</finalName>
+	</build>
 </project>
