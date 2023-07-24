@@ -17,7 +17,7 @@ public class MyAspect {
 	}
 	
 	@After("exectuion(com.bitacademy.aoptest.vo.ProductVo com.bitacademy.aoptest.service.ProductService.find(String))")
-	public void adviceAfter() {
+	public void adviceAfter() {        
 		System.out.println("--- After Advice ---");
 	}
 
